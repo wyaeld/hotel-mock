@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
   def rooms
 
   end
+
+
+  def specials
+
+  end
 end
+

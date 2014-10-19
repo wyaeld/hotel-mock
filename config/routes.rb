@@ -9,6 +9,7 @@ Rails.application.routes.draw do
    put  '/', to: 'application#home' # So we can mock up forms and not get errors
 
    get '/rooms', to: 'application#rooms'
+   get '/specials', to: 'application#specials'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -11,14 +11,14 @@
   </div>
   <div class="col-xs-6">
     <h3>Book Now</h3>
-    <%= form_tag(root_path) do %>
-      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="hh:mm DD/MM/YYYY">
+    <%= form_tag("http://aumuse.webhotel.microsapdc.com/bp/search_rooms.cmd") do %>
+      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="DD MMM, YYYY">
         <%= text_field_tag :from, nil, placeholder: "Arriving", class: "form-control", type: "text" %>
         <span class="input-group-addon">
           <%= fa_icon("calendar") %>
         </span>
       </div>
-      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="hh:mm DD/MM/YYYY">
+      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="DD MMM, YYYY">
         <%= text_field_tag :to, nil, placeholder: "Leaving", class: "form-control", type: "text" %>
         <span class="input-group-addon">
           <%= fa_icon("calendar") %>
@@ -40,8 +40,29 @@
         <%= number_field_tag :rooms,nil, class: "form-control half-width inline pull-right" %>
       </div>
       <%= submit_tag "Check Availability", class: "submit-button btn" %>
-      <% end %>
+    <% end %>
   </div>
 </div>
+<br>
 <hr class="gold">
-<div></div>
+<br>
+<div class="row">
+  <div class="col-xs-4">
+    <a href="<%= specials_path %>">
+      <%= image_tag "scooter.JPG", width: "100%" %>
+      <h4>Hotel Specials</h4>
+    </a>
+  </div>
+  <div class="col-xs-4">
+    <a href="">
+      <%= image_tag "wow.jpg", width: "100%" %>
+      <h4>WOW 2014</h4>
+    </a>
+  </div>
+  <div class="col-xs-4">
+    <a href="">
+      <%= image_tag "art-collection.jpg", width: "100%" %>
+      <h4>ART COLLECTION</h4>
+    </a>
+  </div>
+</div>
