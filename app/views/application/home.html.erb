@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-6">
+    <div>
+      <h3>Browse Rooms</h3>
+      <a href="<%= rooms_path %>"><%= image_tag("rooms.jpg",  width: "100%", alt: "Rooms") %></a>
+    </div>
+    <div>
+      <h3>Location</h3>
+      <a href="https://maps.google.co.nz/maps?q=Museum+Art+Hotel,+Cable+Street,+Wellington&hl=en&sll=-45.274886,170.639648&sspn=7.043629,16.193848&oq=wellington+museum&t=h&z=17&iwloc=A"><%= image_tag("location-map.jpg",  width: "100%", alt: "Rooms") %></a>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <h3>Book Now</h3>
+    <%= form_tag(root_path) do %>
+      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="hh:mm DD/MM/YYYY">
+        <%= text_field_tag :from, nil, placeholder: "Arriving", class: "form-control", type: "text" %>
+        <span class="input-group-addon">
+          <%= fa_icon("calendar") %>
+        </span>
+      </div>
+      <div class='input-group date' data-behaviour='datetimepicker' data-date-format="hh:mm DD/MM/YYYY">
+        <%= text_field_tag :to, nil, placeholder: "Leaving", class: "form-control", type: "text" %>
+        <span class="input-group-addon">
+          <%= fa_icon("calendar") %>
+        </span>
+      </div>
+      <div class="form-group" style="margin-top:12px">
+        <label for="adults" class="inline"><h4 class="inline">Adults
+          </h4></label>
+        <%= number_field_tag :adults,nil, class: "form-control half-width inline pull-right" %>
+      </div>
+      <div class="form-group">
+        <label for="adults" class="inline"><h4 class="inline">Children
+          </h4></label>
+        <%= number_field_tag :children,nil, class: "form-control half-width inline pull-right" %>
+      </div>
+      <div class="form-group">
+        <label for="adults" class="inline"><h4 class="inline">Rooms
+          </h4></label>
+        <%= number_field_tag :rooms,nil, class: "form-control half-width inline pull-right" %>
+      </div>
+      <%= submit_tag "Check Availability", class: "submit-button btn" %>
+      <% end %>
+  </div>
+</div>
+<hr class="gold">
+<div></div>
