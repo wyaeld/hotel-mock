@@ -1,0 +1,4 @@
+$(document).ready -> 
+  console.log "url(<%=asset_path('room-browse-bg.jpg')%>) repeat-y center center black !important;"
+  $('body').css "backgroundImage", "url(/assets/room-browse-bg.jpg) repeat-y center center black !important; "
+  console.log $("body").css("background")
