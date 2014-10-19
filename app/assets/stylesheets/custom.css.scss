@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../assets/glyphicons-halflings-regular.eot');
+    src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../assets/glyphicons-halflings-regular.woff') format('woff'), url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.navbar-brand {
+  padding:2px
+}
+
+h1, h2, h3, h4, h5, a {
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif !important;
+}
+
+.top-gradient {
+  // background: image-url('top-gradient.png') no-repeat top right; 
+  width: 100%;
+  height: 563px; 
+  margin: 0px;
+}
+
+.museum-nav {
+  background-color: transparent;
+}
+
+.museum-nav-container {
+  height: 80px;
+
+  .navbar-header {
+    height: 100%;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #8a731c;
+  color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.collapse.in {
+  background-color: grey;
+  z-index: 100;
+  position: relative !important;
+}
+
+.nav.navbar-nav {
+
+  li {
+    height: 100%;
+
+    a{
+      font-size: 20px;
+      height: 100%;
+    }
+  }
+}
+
+hr.blue {
+  border-top: 1px solid #185397;
+}
+
+hr.black {
+  border-top: 1px solid #000;
+}
+
+hr.gold {
+  border-top: 1px solid #8a731c;
+}
+
+.gold {
+  color: #8a731c;
+}
+
+.half-width {
+  width:50%;
+}
+
+.inline {
+  display: inline;
+}
+
+.submit-button {
+  background-color: #474151;
+  color: white;
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+  width: 100%;
+  margin-top: 8px;
+}
