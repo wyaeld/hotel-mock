@@ -20,8 +20,8 @@ $(document).ready ->
     el.attr "expanded", true
     el.animate
       right: el.data("offset")
-      width: "300%"
-      height: "300%"
+      width: el.data("amount")
+      height: el.data("amount")
     , "medium"
 
   $("[data-expandable='true']").click ->
@@ -30,4 +30,6 @@ $(document).ready ->
     else 
       expand($(this))
 
-
+  $("[data-toggle='tab']").click ->
+    e.preventDefault()
+    $(this).tab('show')

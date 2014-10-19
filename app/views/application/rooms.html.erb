@@ -2,16 +2,60 @@
   <h3 class="gold">FEATURED SUITES</h3>
   <hr class="gold">
   <div class="col-xs-4" align="left">
-    <%= image_tag("the-harbour-suit.jpeg", width: "100%", data: {offset: "0%", expandable: 'true'}, class: "img")%>
-    <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-room/"><h5 class="gold">KING DELUXE</h5></a>
+    <%= image_tag("the-harbour-suit.jpeg", width: "100%", data: {offset: "0%", expandable: 'true', amount: "300%"}, class: "img")%>
+    <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-room/"><h6 class="white">THE WELLINGTON SUITE</h6></a>
   </div>
   <div class="col-xs-4" align="center">
-    <%= image_tag("classic_deluxe.jpg", width: "100%", data: {offset: "100%", expandable: 'true'})%>
-    <a href="http://www.museumhotel.co.nz/apartment-guest-rooms/the-wellington-suite/"><h5 class="gold">THE WELLINGTON SUITE</h5></a>
+    <%= image_tag("classic_deluxe.jpg", width: "100%", data: {offset: "100%", expandable: 'true', amount: "300%"})%>
+    <a href="http://www.museumhotel.co.nz/apartment-guest-rooms/the-wellington-suite/"><h6 class="white">CLASSIC DELUXE</h6></a>
   </div>
   <div class="col-xs-4" align="right">
-    <%= image_tag("exec-harbour-view.jpeg", width: "100%", data: {offset: "200%", expandable: 'true'})%>
-    <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-deluxe-room/"><h5 class="gold">CLASSIC DELUXE</h5></a>
+    <%= image_tag("exec-harbour-view.jpeg", width: "100%", data: {offset: "200%", expandable: 'true', amount: "300%"})%>
+    <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-deluxe-room/"><h6 class="white">EXECUTIVE STUDIO HARBOUR VIEW</h6></a>
   </div>
   <hr class="gold">
+</div>
+<div>
+  <hr class="gold">
+  <br>
+  <br>
+  <br>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active half-width"><a href="#hotel" role="tab" data-toggle="tab"><h4 class="gold">Hotel Guest Rooms</h4></a></li>
+      <li class="half-width"><a href="#apartment" role="tab" data-toggle="tab"><h4 class="gold">Apartment Guest Rooms</h4></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <%# ####################################  %>
+      <div class="tab-pane active" id="hotel">
+        <div class="row">
+          <div class="col-xs-6">
+            <%= image_tag("king-delux.jpg", width: "100%", data: {offset: "0%", expandable: 'true', amount: "200%"}, class: "img")%>
+            <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-room/"><h6 class="white">KING DELUX</h6></a>
+          </div>
+          <div class="col-xs-6">
+            <%= image_tag("classic_deluxe.jpg", width: "100%", data: {offset: "100%", expandable: 'true', amount: "200%"})%>
+            <a href="http://www.museumhotel.co.nz/apartment-guest-rooms/the-wellington-suite/"><h6 class="white">CLASSIC DELUXE</h6></a>
+          </div>
+        </div>
+      </div>
+      <%# ####################################  %>
+      <div class="tab-pane" id="apartment">
+        <div class="row">
+          <div class="col-xs-6">
+            <%= image_tag("the-harbour-suit.jpeg", width: "100%", data: {offset: "0%", expandable: 'true', amount: "200%"}, class: "img")%>
+            <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-room/"><h6 class="white">THE WELLINGTON SUITE</h6></a>
+          </div>
+          <div class="col-xs-6">
+            <%= image_tag("exec-harbour-view.jpeg", width: "100%", data: {offset: "100%", expandable: 'true', amount: "200%"})%>
+            <a href="http://www.museumhotel.co.nz/hotel-guest-rooms/classic-deluxe-room/"><h6 class="white">EXECUTIVE STUDIO HARBOUR VIEW</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
